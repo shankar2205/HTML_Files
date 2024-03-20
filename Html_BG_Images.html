@@ -1,0 +1,77 @@
+<!-- A Background color image can be specified
+for almost any HTML element.
+To add a bg image on a html element, use the HTML
+style attribute and the css bg-image property.
+example : Add a bg-image on a html element.-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlbgimages</title>
+    <style>
+        body {
+            background-image: url(https://images.pexels.com/photos/9979671/pexels-photo-9979671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1 {
+            font-family: monospace;
+            color: rgb(41, 20, 234);
+            font-size: 40px;
+        }
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(14, 212, 90);
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+            color: rgb(17, 19, 18);
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            font-weight: bold;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Adding Background Image in a Html Page.</h1>
+
+    <h2>This is a background image of a dog lying on the bed.</h2>
+
+    <p>Dogs come in many shapes and sizes. The smallest breeds include the toy and miniature varieties, such as the Toy Poodle,
+    Papillon, Chihuahua, and Shih Tzu. These dogs usually weigh only 5 to 10 pounds (2.3 to 4.5 kilograms), or even less.
+    Medium-sized dogs include many of the terriers and spaniels, which weigh in the 10 to 50 pound (4.5 to 23 kilograms) range. 
+    Larger still are the retrievers, shepherds, and setters, which often weigh 65 to 100 pounds (30 to 45 kilograms). 
+    Finally, the giant breeds, such as the Mastiff, Komondor, and Saint Bernard, can approach or exceed 200 pounds (91 kilograms). 
+    Of course, sizes vary within breeds, with males usually being larger than females. Mixed-breed dogs include all size ranges.</p>
+</body>
+</html>-->
+
+<!-- HTML Pictures :
+html <picture> element allows you to display diff type of
+pictures for diff devices or screen sizes.
+The <picture> element contains one or more <source> elements each referring to 
+diff images through the [srcset] attribute.this way the browser can choose 
+the image the best fits the current view and /or device.
+Each source element has a media attribute that defines when the
+image is the most suitable.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlPicture</title>
+    <picture>
+        <source media="(min-width:650px)" srcset="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <source media="(min-width:450px)" srcset="https://images.pexels.com/photos/16985945/pexels-photo-16985945/free-photo-of-puppies-on-couch.jpeg?auto=compress&cs=tinysrgb&w=600">
+        <img src="https://images.pexels.com/photos/15444860/pexels-photo-15444860/free-photo-of-two-dogs-playing-in-the-dirt-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=600"
+         alt="A Sea View" width="800px" height="800px">
+    </picture>
+</head>
+<body>
+    <h1>Using picture element to add a image in the device.</h1>
+</body>
+</html>

@@ -32,7 +32,7 @@ p {
     font-size: large;
 }
 img {
-    width:fit-content;
-    height:fit-content;
+    width:200px;
+    height:200px;
     float: left;
 }
