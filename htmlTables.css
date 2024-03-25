@@ -1,0 +1,42 @@
+/*table, th, td {
+    /*border: 1px solid black;
+    border-collapse: collapse;           /*using collapse property to avoid double borders*/
+    /*border-radius: 10px;
+    border-style: solid;
+}*/
+
+th, td {
+    background-color: #95e1e1;                        /*Table background color adding*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold ;
+    padding: 10px;                                     /*using padding in the cells*/
+}
+th {
+    width:30%;          /*Adding table column width*/
+    text-align: center;        /*using text align to adjust the text in the cells*/
+}
+td {
+    height: 20px;        /* customizing row height */
+    text-align:center;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+caption {                         /*The caption that used to add a caption for table*/
+    font-family: 'Times New Roman', Times, serif;
+    color: tomato;
+    font-size: 16px;
+    font-weight: bold;
+}
+table {
+    border-spacing:50px;
+}
+th:nth-child(even) {
+    background-color: rgba(150, 90, 100, 0.4);
+}
+td:nth-child(even) {
+    background-color:rgba(200,90,120,0.4);
+}
+tr:hover {
+    border-bottom: 2px solid rgb(21, 31, 31);
+    background-color: rgb(60, 192, 117);
+}
