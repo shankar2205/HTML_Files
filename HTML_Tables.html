@@ -1,0 +1,386 @@
+<!-- HTML tables allow web developers to 
+arrange data into rows & Columns.
+A table in html consists of table cells inside rows
+and columns
+Example : A Simple Html Table.-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlTableExamples</title>
+    <link rel="stylesheet" href="htmlTables.css">
+</head>
+<body>
+    <h1>A Basic Html Table with some data.</h1>
+    <table>
+        <tr>
+            <th>Company name</th>
+            <th>Owner</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>FaceBook</td>
+            <td>Mark Jucker Burg</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Google</td>
+            <td>Tim Cook</td>
+            <td>Australia</td>
+        </tr>
+        <tr>
+            <td>Tata Groups</td>
+            <td>Ratan TATA</td>
+            <td>India</td>
+        </tr>
+    </table>
+</body>
+</html>-->
+
+<!--Collapsed Table Borders :
+To avoid having double borders we will use the border-collapse property in css.
+Styling table borders : adding colors to background cells in the tables.
+Round Table Borders :
+With the border radius prperty the borders grt rounded corners.
+with the border style property we can set the appearance of the border.
+HTML Table Sizes :
+use the style attribute with the width or height properties 
+to specify the size of a table, row or column: <table style="width:100%">
+Html Table Width : 
+to set the width of a table add the style attribute to the 
+<table> element
+Table Column Width :
+To set the size of a specific column, add the style attribute on a
+<th> or <td> element.  <th style='width:70%'
+Table Row Width : to set the height of the specific row add the style attribute to
+table row element. <tr style="height:200px">
+Table Headers :
+Html tables can have headers for each column or row, or for many columns/rows 
+the Table headers are defined with <th> element, each <th> element represents the
+table cell
+Vertical Table Headers :
+To use the first column as table headers, define the first cell in 
+each row as a <th> element. -->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TablesHeaders</title>
+    <link rel="stylesheet" href="htmlTables.css">
+</head>
+<body>
+    <h1>Using Table headers to create a table with sime data.</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td>Bill</td>
+            <td>Mark</td>
+            <td>Tim</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>Gates</td>
+            <td>Jucker Burg</td>
+            <td>Cook</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>60</td>
+            <td>35</td>
+            <td>55</td>
+        </tr>
+    </table>
+</body>
+</html>-->    
+
+<!--Align Table Headers:
+by default table headers are bold & centered.
+to left align the table headers use the text-align property. : {text-align:left}
+Headers for multiple columns :
+we can add a header that can spans over two or more columns, for this we 
+will use colspan attribute on the <th> element : <th colspan="2">-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlTables</title>
+    <link rel="stylesheet" href="htmlTables.css">
+</head>
+<body>
+    <h1>Adding Table Header spans in columns</h1>
+    <table>
+        <caption>Players Data</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+            <th>Place</th>
+            <th>Team Name</th>
+            <th>Formats</th>
+        </tr>
+        <tr>
+            <td>Virat</td>
+            <td>Kohli</td>
+            <td>35</td>
+            <td>Delhi</td>
+            <td>India</td>
+            <td>ODI T20</td>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Sharma</td>
+            <td>38</td>
+            <td>Mumbai</td>
+            <td>India</td>
+            <td>ODI T20</td>
+        </tr>
+        <tr>
+            <td>Youzi</td>
+            <td>Chahal</td>
+            <td>40</td>
+            <td>Haryana</td>
+            <td>India</td>
+            <td>Domestic IPL</td>
+        </tr>
+    </table>
+</body>
+</html>-->
+
+<!-- Table Caption :
+we can add a  caption that serves as a heading for the 
+entire table : <caption> Heading</caption>
+HTML Table Padding : Cell Padding is the space b/w the cell
+edges and the cell content.by dafult padding is set to 0. 
+to add padding on table cells, use the css padding property.
+{padding : 10px}
+To add padding only above the content use the : padding - top,
+and other sides with the padding - bottom, padding - left,
+padding - right properties.
+Html Table Cell Spacing :
+cell spacing is the space b/w the each cell,
+To change the space b/w the table cells, use the css property 
+border - spacing on the table element.
+-->
+
+<!--Html Table rowspan :
+to Make a cell span over multiple rows,use the rowspan attribute.-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlTablesCreating</title>
+    <link rel="stylesheet" href="htmlTables.css">
+</head>
+<body>
+    <h1>Adding Table Spans to rows</h1>
+    <table>
+        <caption>Players Data</caption>
+        <tr>
+            <th rowspan="2">Calendar</th>
+            <th>Month</th>
+            <th>Day</th>
+            <th>Year</th>
+            <th>Holidays</th>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>Thursday</td>
+            <td>2024</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Telugu</td>
+            <td>May</td>
+            <td>Wednesday</td>
+            <td>2024</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>August</td>
+            <td>Saturday</td>
+            <td>2019</td>
+            <td>5</td>
+        </tr>
+</body>
+</html>-->
+
+<!--HTML table styling :
+Use css to make your tables look better :
+Table Zebra Strips : 
+if you add a background color on every other table row, 
+you will get a nice zebra strips effects,
+for zebra strips cells, use the nth-child() selector to all even table rows. -->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table Zebra Strips</title>
+    <link rel="stylesheet" href="htmlTables.css">
+</head>
+<body>
+    <table >
+        <tr>
+            <th>Company name</th>
+            <th>Owner</th>
+            <th>Country</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>FaceBook</td>
+            <td>Mark Jucker Burg</td>
+            <td>USA</td>
+            <td>2014</td>
+        </tr>
+        <tr>
+            <td>Google</td>
+            <td>Tim Cook</td>
+            <td>Australia</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td>Tata Groups</td>
+            <td>Ratan TATA</td>
+            <td>India</td>
+            <td>1990</td>
+        </tr>
+    </table>
+</body>
+</html>-->
+
+<!--Combine Vertical and Horizontal Zebra Strips :
+nth-child (even) {
+    background color : rgba();
+}
+Horizontal Dividers :
+Add border-bottom property to all <tr> elements :
+    tr{border - bottom : 2px solid color}
+Html Hoverable table:
+use the :hover selector on <tr> element to highlight the
+    table rows on mouse over the rows.
+tr:hover{
+    bg-color : blue;
+}-->
+ 
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableStyling</title>
+    <link rel="stylesheet" href="TableStyling.css">
+</head>
+<body>
+    <h1>Zebra Striped Lines in the HTML Table.</h1>
+    <p>For Zebra Striped Lines in the tables, use nth-child() selector and add a background color to 
+        all even or odd table rows:
+    </p>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$150</td>
+    </tr>
+    <tr>
+        <td>Joe</td>
+        <td>Swason</td>
+        <td>$200</td>
+    </tr>
+    <tr>
+        <td>Brian</td>
+        <td>Griffin</td>
+        <td>$300</td>
+    </tr>
+</table>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CombinedZebraStrips</title>
+    <link rel="stylesheet" href="TableStyling.css">
+</head>
+<body>
+    <h1>Combined Zebra Striped Tables In Html Pages:</h1>
+    <p>For Zebra Striped Line Tables, use the nth-child () Selector and add a background color to 
+        all even or odd for table rows:
+    </p>
+    <h2>The col group element used for that spans over the two columns to define a style 
+        for the two columns.
+    </h2>
+<table>
+    <colgroup>
+        <col span="2">                                   <!--Empty colgroups used for style the next col spans in the table-->
+        <!--<col span="3" style="background-color: rgb(101, 124, 194);">-->
+    </colgroup>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Color</th>
+        <th>height</th>
+        <th>Country</th>
+        <th>Eye color</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>50</td>
+        <td>White</td>
+        <td>5.0'</td>
+        <td>USA</td>
+        <td>TrueBlack</td>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>40</td>
+        <td>Natural</td>
+        <td>5.3'</td>
+        <td>USA</td>
+        <td>Red</td>
+    </tr>
+    <tr>
+        <td>Brain</td>
+        <td>Griffin</td>
+        <td>15</td>
+        <td>White & Black</td>
+        <td>3.0'</td>
+        <td>USA</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td>Joe</td>
+        <td>Swason</td>
+        <td>18</td>
+        <td>white</td>
+        <td>5.1'</td>
+        <td>USA</td>
+        <td>Blue</td>
+    </tr>
+</table>    
+</body>
+</html>
