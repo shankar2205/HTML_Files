@@ -1,0 +1,25 @@
+table,th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 40%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*tr:nth-child(even) {
+    background-color: rgb(88, 93, 93,0.4);
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(150,212,212,0.4);
+}*/
+
+/*tr:hover {
+    background-color: rgb(104, 206, 128);
+}*/
+
+colgroup {
+    background-color: rgb(128, 146, 205);
+    visibility: collapse;                          /*Hiding styleshed columns */
+}
