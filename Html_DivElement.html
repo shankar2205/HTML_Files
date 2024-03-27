@@ -1,0 +1,202 @@
+<!--
+    The Div element is used as a container for other html elements:
+    The <div> element is default block element meaning 
+    that it takes all available width, and comes with line
+    breakes before and after.
+    Syntax : 
+    <style>
+        div {
+            bg-color: blue;
+        }
+    </style>
+    
+    <body>
+        <h1>----</h1>
+
+    Lorem Ipsum <div> I am a div </div> dolor sit amet.
+    <p>
+    </p>
+    </body>
+-->
+
+<!--The div as a container :
+The <div> element is often used to group sections of a webpage together.
+Example : The div element with HTML elements.-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html DIV Element</title>
+    <style>
+        div {
+            width : 300px;
+            /*margin: auto;*/                        /*The width,margin attributes are used to align the div element in center*/
+        }
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        body {
+            background-color: rgb(134, 132, 128);
+        }
+    </style>
+</head>
+<body>
+    <h1>This Heading about the Multiple Div Elements in Html webpage</h1>
+    <div style="background-color: yellow;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 Millions Inhabitants.</p>
+    </div>
+    <div style="background-color: blueviolet;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital of the norway.</p>
+        <p>Oslo has over the 600 Inhabitants.</p>
+    </div>
+    <div style="background-color: green;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of the Italy.</p>
+        <p>Rome has almost 3 Millions Inhabitants</p>
+    </div>
+    <p>CSS styles are added to make it easier to separate the divs.</p>
+</body>
+</html>-->
+
+<!-- Aligning <div> elements side by side :
+when building webpages you often want to have two or more
+<div> elements side by side. 
+    There are different methods for aligning elements side 
+by side, all include some css styling there are some methods
+commonly used.
+1. float property : it is used to positioning and formatting 
+content and allow elements float next to each other instead of 
+top of the each other.
+<style>
+    div.mycontainer {
+        width:100% ;
+        overflow:auto;
+    }
+    div.mycontainer div {
+        width:33% ;
+        float:left;
+    }
+</style>
+<div class = "mycontainer">    
+-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivElementsMultiple</title>
+    <style>
+        div.mycontainer {
+            width:100%;
+            overflow: auto;
+        }
+        div.mycontainer div {
+            width:33%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class ="mycontainer">
+        <div style="background-color: yellow;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 Millions Inhabitants.</p>
+        </div>
+        <div style="background-color: blueviolet;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital of the norway.</p>
+            <p>Oslo has over the 600 Inhabitants.</p>
+        </div>
+        <div style="background-color: green;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of the Italy.</p>
+            <p>Rome has almost 3 Millions Inhabitants</p>
+        </div>
+    </div>    
+</body>
+</html>-->
+
+<!--Inline-block : 
+if you change the <div> elements display property from 
+block to inline-block, the div elements will no longer add a line
+break before and after,and will be displayed side by side 
+instead of on top of the each other. 
+<style>
+    div {
+        width : 30%;
+        display:inline-block
+    }
+<div style="bg-color:#fff4a3;">   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div inlineblock element</title>
+    <style>
+        div {
+            width:30%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+        <div style="background-color: #fff4a3;">
+        <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 Millions Inhabitants.</p>
+        </div>
+        <div style="background-color: blueviolet;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital of the norway.</p>
+            <p>Oslo has over the 600 Inhabitants.</p>
+        </div>
+        <div style="background-color: green;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of the Italy.</p>
+            <p>Rome has almost 3 Millions Inhabitants</p>
+        </div>
+</body>
+</html>
+
+<!--Flex : The css flexbox layout module was introduced to make it
+easier to design flexible responsive layout structure without using
+float or positioning.
+<style>
+    .mycontainer {
+        display:flex;
+    }
+    .mycontainer>div {
+        width:33%;
+    }
+</style>
+<div class = "mycontainer">
+    code here//    
+-->
+
+<!-- Grid : The css grid layout module offers a grid-based
+layout sysytem ,with rows and columns,making it easier to
+design webpages without having to use floats and positioning.
+The css grid method requires that you surround the <div> elements with
+another <div> element and give the status as a grid container,
+and you must specify the width of each column.-->
+
+<!--
+    <style>
+        .grid-container {
+            display:grid;
+            grid-template-columns:33% 33% 33% ;
+        }
+    </style>
+<div class ="grid-container">
+    code here //        
+-->
