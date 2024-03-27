@@ -1,0 +1,122 @@
+<!-- Html <img> tag used to embed an image in a webpage.
+syntax : <img src = "path link of image"
+alt = "Wallpaper of dag!">
+<img> tag has 2 attributes : 
+1.src -> specifies the path of the image.
+2.alt -> specifies an alternate text for the image.
+Images size -> width and height;
+we can use the style attribute to specify the width\
+and height of the image.
+Syntax : 
+<img src = "Path of image"
+alt = "alternate text"
+style = "width:100px;height:200px">-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width : 50%
+        }
+        h1 {
+            font-family: monospace;
+            color: tomato;
+        }
+        h2 {
+            font-family: cursive;
+            color: steelblue;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading about image adding with out style attribute to HTML pages.</h1>
+    <img src="C:\Users\91728\OneDrive\Pictures\Desktop\Html Practice files raw data\workplace.jpg" alt="workplace"
+    width="150px" height="200px">
+
+    <h2>This is second heading about style attribute using in html Page</h2>
+    <img src="C:\Users\91728\OneDrive\Pictures\Desktop\Html Practice files raw data\workplace.jpg" alt="workplace">
+
+</body>
+</html>-->
+
+<!-- Images on another folder :
+if we have images in another folder you must include the folder name in the [src] attribute:
+example : <img src = "/imges/img.jpg"  (we have to add "/folder name/image name.extenion")
+alt = "a cat image"
+style = "width : 120px; height : 120px"> 
+-> Images on another website : 
+some websites point to an image on other server, you must specify 
+an absolute URL in the src attribute;
+-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Images from another website embeding by using img tag.</h1>
+    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1k3sH1.img?w=768&h=512&m=6&x=275&y=103&s=650&d=164" alt="Rcb Perry"
+    style="height: fit-content;width: fit-content;">
+    <p>We have added an image from another server with embeding a image link this web page.</p>
+</body>
+</html>-->
+
+<!-- Image floating :
+in the float property to let the image float to the right or
+left of a text;
+syntax : <p> <img src = "Image link" alt = "alt Name"
+style = "float : right;
+width : 42px; height : 50px;"
+by using the float property the image will float from right or left to the image:-->
+
+<!-- HTML IMAGE MAPS :
+With html image maps we can create clickable areas on an image!
+html <map> tag defines an image with clickable areas.the areas defined
+with one or more <area> tags -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Using html img tag to map a image in a HTML page.</h1>
+    <img src="C:\Users\91728\OneDrive\Pictures\Desktop\Html Practice files raw data\workplace.jpg" alt="A workplace"
+    usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="35,43,269,346" href="C:\Users\91728\OneDrive\Pictures\Desktop\Downloads\pexels-nemuel-sereti-6424590.jpg" 
+        alt="Laptop Wallpaper" onclick="Laptop()">
+        <area shape="rect" coords="292,175,332,244" href="C:\Users\91728\OneDrive\Pictures\Desktop\Downloads\pexels-pixabay-270283.jpg"
+        alt="A Mobile Phone" onclick="MobilePhone()">
+        <area shape="circle" coords="337,303,45" href="C:\Users\91728\OneDrive\Pictures\Desktop\Downloads\pexels-mew-wy-2910874.jpg"
+        alt="A Coffe Cup" onclick="myFunction()">
+    </map>
+    <script>
+    function myFunction(){
+        alert("You clicked the Coffe Cup");
+    }
+    function MobilePhone(){
+        alert("You clicked the Mobile Phone");
+    }
+    function Laptop(){
+        alert("You clicked the Laptop");
+    }
+    </script>
+
+    <p>To Create an image map you need an image and some HTML code that descibes the clickable areas.</p>
+
+</body>
+</html>
