@@ -136,7 +136,7 @@ instead of on top of the each other.
     }
 <div style="bg-color:#fff4a3;">   -->
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -149,7 +149,7 @@ instead of on top of the each other.
         }
     </style>
 </head>
-<body>
+<body>-->
         <!--<div style="background-color: #fff4a3;">
         <h2>London</h2>
                 <p>London is the capital city of England.</p>
@@ -200,3 +200,51 @@ and you must specify the width of each column.-->
 <div class ="grid-container">
     code here //        
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Grid Example</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+        }
+        p {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: large;
+        }
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Heading About Grid using in html div element.</h1>
+    <p>Aligning three div elements side by side.</p>
+    <div class = "grid-container">
+        <!--<div style="background-color: #fff4a3;">-->
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+        </div>
+        <!--<div style="background-color:#FFC0C7;">-->
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+        <!--<div style="background-color:#D9EEE1;">-->
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+</body>
+</html>
